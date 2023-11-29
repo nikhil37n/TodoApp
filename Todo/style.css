@@ -1,0 +1,50 @@
+.app{
+    margin: 0 auto;
+    border: 1px solid grey;
+    padding: 20px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-container{
+    position: relative;
+}
+
+.input-container > input {
+    width: 200px;
+    padding: 10px;
+    padding-right: 30px; 
+}
+
+.closeIcon {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 15px;
+    cursor: pointer;
+}
+
+button {
+    margin: 15px;
+    cursor: pointer;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#todoList input {
+    padding-right: 10px;
+}
+
+#todoList .closeIcon {
+    right: -20px;
+}
+
+#todoList li {
+    margin-bottom: 10px;
+}
