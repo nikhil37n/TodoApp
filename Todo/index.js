@@ -32,6 +32,11 @@ function emptyNode(parent) {
 
 function renderList() {
     emptyNode(todoList);
+    if(todo.todos.length === 0) {
+        const DIV = document.createElement('div');
+        DIV.innerHTML = 'No Todos Available!';
+        todoList.appendChild(DIV);
+    }
     todo.todos.map(todo => {
         const LI = document.createElement('li');
         const DIV = document.createElement('div');
